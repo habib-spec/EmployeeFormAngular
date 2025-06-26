@@ -1,0 +1,158 @@
+/* src/app/app.component.css */
+
+.container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.employee-list {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button[type="button"] { /* For Cancel Edit button */
+  background-color: #6c757d;
+  margin-left: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  border: 1px solid #e9ecef;
+  padding: 12px 8px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+tr:hover {
+  background-color: #e2f4ff;
+}
+
+/* Column width adjustments for better table layout */
+th:nth-child(1), td:nth-child(1) { width: 5%; } /* ID */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* First Name */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* Last Name */
+th:nth-child(4), td:nth-child(4) { width: 15%; } /* Position */
+th:nth-child(5), td:nth-child(5) { width: 10%; } /* Salary */
+th:nth-child(6), td:nth-child(6) { width: 20%; } /* Email */
+th:nth-child(7), td:nth-child(7) { width: 20%; } /* Actions */
+
+
+.actions {
+  white-space: nowrap; /* Keep buttons on one line */
+}
+
+.actions button {
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 3px;
+  margin-top: 0; /* Override default button margin-top */
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #bd2130;
+}
+
+p {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 15px;
+}
